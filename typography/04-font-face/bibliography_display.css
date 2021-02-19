@@ -1,0 +1,60 @@
+
+@font-face {
+    font-family: 'open_sansregular';
+    font-weight: normal;
+    font-style: normal;
+}
+h1{
+   font-family: 'open_sansregular';georgia
+   font-style: bold;
+   font-weight: extraheavy;
+   font-size: 18px;
+   line-height: 48px;
+   text-align: left;
+   }
+h2{
+   font-family: 'veranda';
+   font-style: bold;
+   font-weight: heavy;
+   font-size: 14px;
+   line-height: 48px;
+   text-align: left;
+   text-transform; uppercase;
+   }
+
+
+*{
+ margin: 0px;
+ padding: 0px;
+ }
+
+ #main_container{
+   width:400px;
+   border-width:1px;
+   border-style:solid;
+   margin-top:20px;
+   margin-right:auto;
+   margin-left:auto;
+   background-color:#ffffff;
+   padding:20px;
+   }
+
+   p
+   {
+   font-family: georgia;
+   font-size: 15px;
+   line-height: 22px;
+   margin-left: 22px;
+   text-indent: -22px;
+   margin-bottom: 5px;
+   }
+   .intro{
+   text-indent: 0px;
+   margin-left: 0px;
+   }
+
+   strong{
+   font-weight: normal;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   }

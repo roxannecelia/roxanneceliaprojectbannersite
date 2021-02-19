@@ -1,0 +1,45 @@
+a {
+  color: #D9831A;
+}
+
+a:hover {
+  color: #F22F1D
+}
+.menu .button, .menu a {
+  padding: .7em 0.5rem;
+}
+body {
+  background-color: #E2DAD3;
+}
+.top-bar-left .menu-text{
+padding: 0;
+}
+
+#logo{
+  padding: 0;
+}
+h3{
+  font-size: 2em
+}
+.menu-text{
+  font-weight: 400;
+}
+
+footer .menu-text{
+  font-family: "Times New Roman", serif;
+}
+ul {
+  list-style:none
+}
+.blog-post h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top:
+}
+
+.medium-3, cell, stick-container, .sticky {
+  margin-top:2em;
+}
+.sticky a{
+  font-weight: bold;
+}

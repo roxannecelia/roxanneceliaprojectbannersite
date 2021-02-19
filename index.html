@@ -1,0 +1,113 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roxanne's Site</title>
+    <link rel="stylesheet" href="css/foundation.min.css">
+    <link rel="stylesheet" href="css/motion-ui.min.css">
+    <link rel="stylesheet" href="css/foundation-prototype.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="grid-container">
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <ul class="menu">
+                <li class="menu-text"><a id="logo" href="index.html"><img class="orbit-image" src="images/logo.png" alt="logo"></a></li>
+            </ul>
+        </div>
+
+        <div class="top-bar-right">
+            <ul class="menu">
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<article class="grid-container">
+  <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+      <ul class="orbit-container">
+          <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+          <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+          <li class="is-active orbit-slide">
+              <img class="orbit-image" src="images/welcome.png" alt="welcome">
+          </li>
+          <li class="orbit-slide">
+              <img class="orbit-image" src="images/color.png" alt="color">
+          </li>
+          <li class="orbit-slide">
+              <img class="orbit-image" src="images/app.png" alt="app">
+          </li>
+          <li class="orbit-slide">
+              <img class="orbit-image" src="images/resources.png" alt="Resources">
+          </li>
+      </ul>
+      <nav class="orbit-bullets">
+          <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+          <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+          <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+          <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+      </nav>
+  </div>
+</article>
+
+<hr>
+
+    <article class="grid-container">
+
+        <div class="grid-x grid-margin-x">
+            <div class="medium-4 cell">
+              <a href="color/index.html" target="_blank"> <h3>Color Mini Site</h3>
+                  <img class="thumbnail" src="images/colorsite.png" alt="colorsite">
+                <p>This color mini site has many beautiful combinations of color schemes. Dia de Muertos and my Mexican heritage were large contibutors to the design inspirations and color combonations. You will find combinations of Complementary, Analagous, and others that create beautifully colorful displays. </p>
+            </div>
+            <div class="medium-4 cell">
+                <a href="gallery.html"><h3>Gallery</h3>
+                  <img class="thumbnail" src="images/appproj.png" alt="approj">
+                <p>Get in the Groove is a to-do list style app fueled by morning and evening routines. In this app the user is able to set a custom morning and/or evening routine and reminders to ensure they get everything done.</p>
+            </div>
+            <div class="medium-4 cell">
+              <a href="resources.html">  <h3>Resources & Links</h3>
+                  <img class="thumbnail" src="images/references.png" alt="references">
+                <p>Here are a few resources and and animations that were useful fo rmy projects.</p>
+            </div>
+        </div>
+        <hr>
+
+    </article>
+
+    <footer class="grid-container">
+        <div class="grid-x grid-margin-y expanded">
+            <div class="medium-6 cell">
+                <ul class="menu">
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="resources.html">Resources</a></li>
+                  <li><a href="index.html">Home</a></li>
+                </ul>
+            </div>
+            <div class="medium-6 cell">
+                <ul class="menu align-right">
+                    <li class="menu-text">Copyright © 2020 Roxanne Arreola</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/motion-ui.min.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
+</body>
+
+</html>

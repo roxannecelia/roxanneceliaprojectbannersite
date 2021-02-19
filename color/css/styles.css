@@ -1,0 +1,169 @@
+
+/* this first section is what is known as a CSS reset, it strips any styles that are inherited from the browser that an individual is looking at the page in.*/
+body,div,dl,dt,dd,ul,ol,li, pre,form,fieldset,input,textarea,optgroup,button,p, blockquote,th,td{margin:0;padding:0;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}table{border-collapse:collapse;border-spacing:0;}caption,th{text-align:left;}ol,ul{list-style:none;}fieldset,img{border:0;}input,textarea,select,optgroup,option,button{font-family:inherit;font-size:100%;}button,input {width: auto;overflow: visible;}optgroup,address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym {border:0;} dl li{list-style: none;} a{text-decoration: none;}
+
+/* now comes our chosen styles.*/
+
+/* a major note about working responsively: pixels are not responsive so we need to set many of our pixel set sizes to % or ems by figuring out a simple formula (target divided by context = result)*/
+
+body {
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	background-image: url("../images/background.png"); /* with CSS3 we can now work with things like gradient backgrounds! */
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #333;
+	font-weight: bold;
+	font-size: 1.5em;
+	margin: 0.625em 0;
+}
+
+section, article, header, footer, nav {
+	display: block;
+}
+
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #808990;
+	font-size: 0.75em; /* font size on most browsers equates to 16px, but by following The Formula we get a responsive em value 12 / 16 = 0.75 */
+}
+
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	color: #221E20;
+}
+
+section {
+	width: 75%; /* width can also be determined by our formula or visual choice by setting and testing our section width in % */
+	margin-top: 1.875em;
+	margin-right: auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	margin-bottom: 0;
+	margin-left: auto;
+	padding-top: 1.875em;
+	background: #FFF;
+}
+
+header {
+	background: #ffffff;
+	padding-right: 1.875em;
+	padding-left: 1.875em;
+}
+
+header img {
+	width: 100%; /* by setting a width of 100% to our header img the picture can now scale with the screen. note that it it the percentage of the containing div/article/section/etc. that it is determining. */
+}
+
+nav {
+	margin-bottom: 0.625em;
+	/* by default items always build on the top left, but since the nav is the container for our links we can do float: right to have it on the right hand side, or because it is all text links we could use text-align: center to have our navigation in the middle. */
+text-align:center;
+}
+
+article {
+	padding: 0 1.875em 1.875em 1.875em; /* we use a short hand version of things for margin and padding settings instead of writing padding-top: padding-right: padding-bottom: padding-left: they can be put on one command, the order of which is padding: top right bottom left. */
+}
+
+article p {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 0.875em;
+	color: #AAA;
+	line-height: 1.5em;
+}
+
+table {
+	width: 100%;
+	border: 0.0625em;
+	text-align: center;
+}
+
+#home th {
+	width: 16.6%;
+	background-color: #000;
+	color: #fff;
+	font-size: 0.6875em;
+	padding-left: 0.4375em;
+		text-align: center;
+}
+
+#palette th {
+	width: 50%;
+	background-color: #000;
+	color: #fff;
+	font-size: 0.6875em;
+	padding-left: 0.4375em;
+		text-align: center;
+}
+
+td {
+	font-size: 0.6875em;
+	color: #333;
+	padding-right: 0.25em;
+	padding-left: 0.25em;
+	border: 0.0625em solid #FFF;
+	height: 8em;
+	vertical-align: bottom;
+}
+
+table tr td span {
+	color: #FFF;
+}
+
+.instruction {
+	font-style: italic;
+}
+
+.lighttext {
+	color: #CFD6D3;
+}
+
+.visible {
+	color: #AAA;
+	display: block; /*sometimes we need to hide something but still have it in our HTML, we can do this by adding a CSS command of display: none.*/
+}
+
+/* ~~ The footer ~~ */
+footer {
+	padding: 0.625em 0; /* this is the padding short hand short hand where the left is for top AND bottom and the right is for left AND right properties*/
+	background: #CFD6D3;
+}
+
+footer p {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 0.6875em;
+	color: #666;
+	margin-right: 1.875em;
+	margin-left: 1.875em;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.right {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 0.5em;
+}
+.left { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 0.5em;
+}
+
+/* self-clear floats */
+.group:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+/* notice how the site ends up looking a bit awkward at smaller window sizes? we can change our rules to help with this by using media queries! */
+
+/*--------------------------------------------------- media query ---------------------------------------------------
+
+@media screen and (max-width: 650px) {
+	section {
+		width: 500px;
+	}
+
+*/
